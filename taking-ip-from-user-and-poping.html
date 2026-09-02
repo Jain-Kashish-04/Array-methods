@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>
+			Taking input from user and poping elements
+		</title>
+	</head>
+	
+	<body>
+		<input type="text" placeholder="Type something" id="input" style="width: 400px; height: 60px;">
+		<button type="button" onclick = "check()" style="width: 150px; height: 60px;" > Pop the element </button>
+		
+		<script>
+			function check(){
+				
+				let n = document.getElementById('input').value;
+				let arr = n.split(" ");
+				
+				var popped = arr.pop();
+				document.write("Popped Element: " + popped + "<br>");
+				document.write("Remaining Array: " + arr.toString());
+			}
+		</script>
+	</body>
+	
+</html>
