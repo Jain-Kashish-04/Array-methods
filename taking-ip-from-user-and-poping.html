@@ -8,6 +8,7 @@
 	<body>
 		<input type="text" placeholder="Type something" id="input" style="width: 400px; height: 60px;">
 		<button type="button" onclick = "check()" style="width: 150px; height: 60px;" > Pop the element </button>
+		<p id="result">  </p>
 		
 		<script>
 			function check(){
@@ -16,9 +17,15 @@
 				let arr = n.split(" ");
 				
 				var popped = arr.pop();
-				document.write("Popped Element: " + popped + "<br>");
-				document.write("Remaining Array: " + arr.toString());
+			
+				document.getElementById('result').innerHTML = ("Popped Element: " + popped + "<br>" +
+				"Remaining Array: " + arr.concat()); 
+				
+				//document.write("Popped Element: " + popped + "<br>");
+				//document.write("Remaining Array: " + arr.concat());
+				
 			}
+			
 		</script>
 	</body>
 	
