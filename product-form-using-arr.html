@@ -1,4 +1,84 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Unique Product Form</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+			* {
+				font-family: "Poppins", sans-serif;
+			}
+		</style>
+	</head>
+	
+	<body class="bg-slate-50 min-h-screen text-slate-800 antialiased selection:bg-emerald-500 selection:text-white">
+			
+		<section class="relative flex flex-col justify-center items-center min-h-screen py-12 px-4 overflow-hidden">
+			<!-- Subtle ambient glowing background blur -->
+			<div class="absolute -top-10 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-emerald-300/30 rounded-full blur-3xl pointer-events-none"></div>
 
+			<div class="relative w-full max-w-lg bg-white/80 backdrop-blur-md border border-slate-200/80 rounded-2xl p-8 shadow-xl shadow-slate-200/50 transition-all">
+				
+				<!-- Subtle Top accent line -->
+				<div class="absolute top-0 left-8 right-8 h-[3px] bg-gradient-to-r from-emerald-800 via-emerald-500 to-emerald-800 rounded-full"></div>
+
+				<h2 class="text-2xl font-bold text-slate-900 mb-6">Product Information</h2>
+
+				<form class="space-y-5">
+					<div>
+						<label class="flex items-center gap-2 text-slate-700 font-medium text-sm mb-2">
+							<span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+							Product ID
+						</label>
+						<input 
+							type="text" 
+							required 
+							placeholder="001" 
+							class="w-full bg-slate-50/80 border border-slate-200 rounded-xl px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:outline-none focus:border-emerald-500 focus:ring-4 focus:ring-emerald-500/10 focus:bg-white -translate-y-0 focus:-translate-y-0.5 transition-all duration-200"
+						/>
+					</div>
+
+					<div>
+						<label class="flex items-center gap-2 text-slate-700 font-medium text-sm mb-2">
+							<span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+							Product Name
+						</label>
+						<input 
+							type="text" 
+							required 
+							placeholder="Watches" 
+							class="w-full bg-slate-50/80 border border-slate-200 rounded-xl px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:outline-none focus:border-emerald-500 focus:ring-4 focus:ring-emerald-500/10 focus:bg-white -translate-y-0 focus:-translate-y-0.5 transition-all duration-200"
+						/>
+					</div>
+
+					<div>
+						<label class="flex items-center gap-2 text-slate-700 font-medium text-sm mb-2">
+							<span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+							Product Description
+						</label>
+						<textarea 
+							rows="4" 
+							placeholder="Write Product Details..." 
+							required 
+							class="w-full bg-slate-50/80 border border-slate-200 rounded-xl px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:outline-none focus:border-emerald-500 focus:ring-4 focus:ring-emerald-500/10 focus:bg-white -translate-y-0 focus:-translate-y-0.5 transition-all duration-200 resize-none"
+						></textarea>
+					</div>
+
+					<div class="pt-2">
+						<button 
+							type="submit" 
+							class="w-full bg-gradient-to-r from-emerald-800 to-emerald-600 hover:from-emerald-700 hover:to-emerald-500 text-white font-medium text-sm py-3.5 px-6 rounded-xl shadow-lg shadow-emerald-700/20 hover:shadow-xl hover:shadow-emerald-700/30 active:scale-[0.99] transition-all duration-200 cursor-pointer"
+						>
+							Submit Product
+						</button>
+					</div>
+				</form>
+			</div>
+		</section>
+
+	</body>
 </html>
