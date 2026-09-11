@@ -76,7 +76,18 @@
 					</div>
 				</form>
 			</div>
-						
+			
+			
+			
+			<div class="pt-2">
+				<button onclick="pop()" type="button" class="w-full bg-gradient-to-r from-emerald-800 to-emerald-600 hover:from-emerald-700 hover:to-emerald-500 text-white font-medium text-sm py-3.5 px-6 rounded-xl shadow-lg shadow-emerald-700/20 hover:shadow-xl hover:shadow-emerald-700/30 active:scale-[0.99] transition-all duration-200 cursor-pointer">
+					POP THE CARD
+				</button>
+			</div>
+			
+			
+			
+			
 			<div id="card-con" class="relative w-full max-w-5xl mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
 			
 			</div>
@@ -125,6 +136,14 @@
 					`;
 				}
 				console.log(products);
+			}
+			
+			function pop(){
+				let n = document.getElementById('addproduct').value;
+				let arr  = products.split(" ");
+				var popped = arr.pop();
+				
+				document.getElementById('card-con').innerHTML = popped;
 			}
 		</script>
 		
